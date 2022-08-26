@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import secp256k1
+import secp256k1swift
 import CryptoSwift
 
 public final class EthereumPrivateKey {

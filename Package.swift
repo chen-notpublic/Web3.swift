@@ -23,7 +23,8 @@ let package = Package(
         // Core dependencies
         .package(url: "https://github.com/attaswift/BigInt.git", from: "5.0.0"),
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.5.1"),
-        .package(name: "secp256k1", url: "https://github.com/Boilertalk/secp256k1.swift.git", from: "0.1.1"),
+        .package(name: "secp256k1swift", url: "https://github.com/chen-notpublic/secp256k1.swift.git", .branch("master")),
+        // .package(name: "secp256k1", url: "https://github.com/Boilertalk/secp256k1.swift.git", from: "0.1.1"),
 
         // PromiseKit dependency
         .package(url: "https://github.com/mxcl/PromiseKit.git", from: "6.0.0"),
@@ -38,7 +39,8 @@ let package = Package(
             dependencies: [
                 .product(name: "BigInt", package: "BigInt"),
                 .product(name: "CryptoSwift", package: "CryptoSwift"),
-                .product(name: "secp256k1", package: "secp256k1"),
+                .product(name: "secp256k1swift", package: "secp256k1swift"),
+                // .product(name: "secp256k1", package: "secp256k1"),
             ],
             path: "Sources",
             sources: ["Core", "FoundationHTTP"]),
